@@ -92,22 +92,17 @@ p {
   color: var(--accent-text-color);
   text-decoration: none;
 }
-.item>.icon-header{
+.item> .icon-header-mail >.icon-header{
   margin-right: 10px;
-  fill: var(--primary-text-color);
+ 
 }
 .item>.icon-header-mail{
-  margin-right: 10px;
   fill: var(--primary-text-color);
-height: 10px;
-  width: 16px;
 }
 .item>.icon-header-mail:hover{
   fill: var(--accent-text-color);
 }
-.icon-header:hover{
-  fill: var(--accent-text-color);
-}
+
 .site-nav>.item{
   padding-top: 20px;
   padding-bottom: 20px;
@@ -253,6 +248,9 @@ background: rgba(47, 48, 58, 0.4);
   flex-wrap: wrap;
 }
 .flex-container-comand {
+}
+.icon-social{
+  
 }
 .social-links-comand{
   justify-content: center;
@@ -437,31 +435,39 @@ padding-right: 22px;
 }
 .customers-list{
   display: flex;
+    margin-top: 50px;
 }
-  .customers-img{
-    fill: var(--customers-border-color);
+
+.customers-img{
   flex-wrap: nowrap;
-  display: block;
-  margin-top: 50px;
+  display: flex;
+  align-items: flex-start;
+  
+}
+.logo-customers{
+  fill: var(--customers-border-color);
+  border: 1px solid var(--customers-border-color);
+  border-radius: 4px;
+  cursor: pointer;
   margin-right: 30px;
   padding-top: 16px;
   padding-bottom: 16px; 
   padding-left: 32px; 
   padding-right: 32px;
-  border: 1px solid var(--customers-border-color);
-  border-radius: 4px;
-  cursor: pointer;
-} 
+}
+.logo-customers:hover{
+  fill: var(--accent-text-color);
+  border-color: var(--accent-text-color);
+}
 .footer-icon{
     fill: rgb(255, 255, 255, 10%);
 }
 .footer-icon:hover{
     fill: var(--accent-text-color);
 }
-.customers-img:hover {
-  fill: var(--accent-text-color);
-  border-color: var(--accent-text-color);
-}
+ .customers-img:hover {
+  
+} 
 .customers-img:last-child {
   margin-right:0;
 }
@@ -477,8 +483,18 @@ padding-right: 22px;
   background-color: var(--footer-bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
+
+  
+    display: flex;
+    align-content: stretch;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
 }
 
+.rt{
+  margin-bottom: 30px;
+}
 .footer-list-adress {
   color: var(--header-bg-color);
   font-style: normal;
@@ -540,7 +556,7 @@ padding-right: 22px;
   text-align: center;
   margin-bottom: 20px;
 }
-.footer-social{
+.footer-social.list{
   display: flex;
   justify-content: center;
   margin-right: 10px;
