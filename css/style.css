@@ -508,7 +508,6 @@ padding-right: 22px;
   border: 1px solid var(--customers-border-color);
   border-radius: 4px;
   cursor: pointer;
-  margin-right: 30px;
   padding-top: 16px;
   padding-bottom: 16px; 
   padding-left: 32px; 
@@ -517,6 +516,13 @@ padding-right: 22px;
 .logo-customers:hover{
   fill: var(--accent-text-color);
   border-color: var(--accent-text-color);
+}
+.customers-img-logo{
+  width: 170px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
 }
 
 .footer-icon{
